@@ -9,8 +9,8 @@
 ## 安装
 
 ```bash
-# 1. 添加本 marketplace（把路径换成你的 GitHub 地址）
-/plugin marketplace add harry/hl-skills
+# 1. 添加本 marketplace
+/plugin marketplace add hleidev/hl-skills
 
 # 2. 安装某个插件
 /plugin install research@hl-skills

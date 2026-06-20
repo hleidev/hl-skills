@@ -9,8 +9,8 @@ This repository is a **plugin marketplace**: one repo that holds a growing set o
 ## Install
 
 ```bash
-# 1. Add this marketplace (replace with your GitHub path)
-/plugin marketplace add harry/hl-skills
+# 1. Add this marketplace
+/plugin marketplace add hleidev/hl-skills
 
 # 2. Install a plugin
 /plugin install research@hl-skills
