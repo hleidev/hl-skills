@@ -1,0 +1,47 @@
+# hl-skills
+
+> A personal collection of [Claude Code](https://docs.claude.com/en/docs/claude-code) skills, distributed as installable plugins.
+
+**English** | [简体中文](README.zh-CN.md)
+
+This repository is a **plugin marketplace**: one repo that holds a growing set of plugins, each bundling one or more skills. Add the marketplace once, then install whichever plugins you want.
+
+## Install
+
+```bash
+# 1. Add this marketplace (replace with your GitHub path)
+/plugin marketplace add harry/hl-skills
+
+# 2. Install a plugin
+/plugin install research@hl-skills
+```
+
+## Plugins
+
+| Plugin | Skills | Invoke | What it does |
+|---|---|---|---|
+| `research` | `reporting` | `/research:reporting` | Structured external-information research that produces a decision-grade report |
+
+> The `research` plugin defaults to **Chinese** output. To use another language, change the "Output language" setting in its `SKILL.md`, or just ask in your own language when you invoke it.
+
+More plugins will be added to this same repo over time — adding one never requires a new repository.
+
+## Repository layout
+
+```
+hl-skills/
+├── .claude-plugin/
+│   └── marketplace.json          # registry: lists every plugin below
+├── plugins/
+│   └── research/
+│       ├── .claude-plugin/
+│       │   └── plugin.json        # plugin manifest
+│       └── skills/
+│           └── reporting/
+│               └── SKILL.md       # the skill
+└── README.md
+```
+
+## License
+
+[MIT](LICENSE).
