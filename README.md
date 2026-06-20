@@ -1,10 +1,23 @@
+<div align="center">
+
 # hl-skills
 
-> A personal collection of [Claude Code](https://docs.claude.com/en/docs/claude-code) skills, distributed as installable plugins.
+**Claude Code skills, shipped as installable plugins.**
 
-**English** | [简体中文](README.zh-CN.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](https://docs.claude.com/en/docs/claude-code)
+
+[Install](#install) · [Plugins](#plugins) · [中文](README.zh.md)
+
+</div>
+
+---
 
 This repository is a **plugin marketplace**: one repo that holds a growing set of plugins, each bundling one or more skills. Add the marketplace once, then install whichever plugins you want.
+
+## Requirements
+
+- **[Claude Code](https://docs.claude.com/en/docs/claude-code)**
 
 ## Install
 
@@ -39,9 +52,11 @@ hl-skills/
 │       └── skills/
 │           └── reporting/
 │               └── SKILL.md       # the skill
-└── README.md
+├── README.md
+├── README.zh.md
+└── LICENSE
 ```
 
 ## License
 
-[MIT](LICENSE).
+MIT — see [LICENSE](LICENSE).

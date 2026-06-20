@@ -1,10 +1,23 @@
+<div align="center">
+
 # hl-skills
 
-> 一套个人 [Claude Code](https://docs.claude.com/en/docs/claude-code) skills 合集，以可安装的插件形式分发。
+**一套 Claude Code skills 合集，以可安装的插件形式分发。**
 
-[English](README.md) | **简体中文**
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](https://docs.claude.com/en/docs/claude-code)
+
+[安装](#安装) · [插件](#插件) · [English](README.md)
+
+</div>
+
+---
 
 本仓库是一个 **插件 marketplace**：用一个仓库容纳不断增长的多个插件，每个插件捆绑一个或多个 skill。只需添加一次 marketplace，之后按需安装任意插件。
+
+## 依赖
+
+- **[Claude Code](https://docs.claude.com/en/docs/claude-code)**
 
 ## 安装
 
@@ -39,9 +52,11 @@ hl-skills/
 │       └── skills/
 │           └── reporting/
 │               └── SKILL.md       # skill 本体
-└── README.md
+├── README.md
+├── README.zh.md
+└── LICENSE
 ```
 
-## 许可
+## 许可证
 
-[MIT](LICENSE)。
+MIT，详见 [LICENSE](LICENSE)。
