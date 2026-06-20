@@ -1,0 +1,10 @@
+{
+  "name": "research",
+  "description": "Structured external-information research that produces a decision-grade report.",
+  "license": "MIT",
+  "author": {
+    "name": "harry",
+    "email": "harryleiyyds@gmail.com"
+  },
+  "keywords": ["research", "reporting", "comparison", "decision-support"]
+}
