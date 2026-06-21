@@ -167,6 +167,8 @@ After each recommendation, append a source quality tag based on the evidence gat
 - `[Medium]` = 1 authoritative source OR community consensus across ≥2 platforms
 - `[Low]` = practitioner experience only, or adversarial check raised concerns
 
+Taste, aesthetic, or preference-type recommendations (e.g. visual style) cap at `[Medium]` — no authoritative source can settle a matter of taste, so they are never `[High]`. If nearly every dimension comes out `[High]`, re-check the tags: the tag is calibration, not decoration.
+
 In the Chinese report, label this "Source Quality" — not "Confidence Level" — to avoid false precision.
 
 **Step 4 — Adversarial check** — for each recommended option from Step 3, run one targeted search per recommendation in a single batch using negation-intent queries: `"<X> problems"`, `"why not use <X>"`, `"<X> pitfalls"`. If results surface a failure mode that undermines the recommendation, revise it before proceeding to Step 5.
@@ -218,6 +220,7 @@ Add a **Research Sources** line in the report header listing the source types ac
 ### Phase 1
 
 - **Adversarial check is not optional** — Step 4 fires for every recommendation; a recommendation that has not been challenged is incomplete
+- **Tag calibration** — source-quality tags must discriminate; taste/preference items cap at `[Medium]`, and an all-`[High]` table is a signal to re-examine the evidence, not a sign of success
 - **Dynamic source selection** — read source-catalog, select by domain; never default to "docs + community" for everything
 - **context7 scope** — context7 is for library/framework API documentation only; use WebSearch for SEO, architecture decisions, and community experience
 - **Open Questions: research gate** — before surfacing any candidate question, ask: "could research resolve this?" If yes, research it now. Only ask the user for decisions that depend on their preferences, constraints, or situation that no search can resolve. Max 2. Omit section entirely if nothing genuinely requires user input.
