@@ -1,11 +1,10 @@
 ---
 name: reporting
 description: "Structured external-information research that produces a decision-grade report — technology comparisons, market research, academic topics, and life choices. Runs a two-phase workflow: classify and clarify the question, then run parallel multi-source searches with adversarial verification and source-quality tags, and write a typed report. Use when the user wants researched recommendations backed by sources. NOT for pre-implementation planning — use a planning workflow for that."
-disable-model-invocation: true
-allowed-tools: WebSearch WebFetch Read Write
+allowed-tools: WebSearch WebFetch Read Write TaskCreate TaskUpdate
 argument-hint: "[topic, question, or vague idea]"
+effort: high
 ---
-ultrathink
 
 ## Topic
 
@@ -19,22 +18,18 @@ Default output language is **Chinese**. If the user writes in — or explicitly 
 
 ## Two-Phase Workflow
 
-Copy this checklist into your reply and tick each item as you complete it. Skip the Phase 0 items when context is sufficient and you go straight to Phase 1 (see Phase 0, Step 3).
+At the start, create a task list with **TaskCreate** to track progress — do **not** paste a markdown checklist into your reply. Mark each task `in_progress` when you begin it and `completed` when done with **TaskUpdate**. Skip the Phase 0 tasks when context is sufficient and you go straight to Phase 1 (see Phase 0, Step 3). Write task titles in the output language (Chinese by default; see Output language above).
 
-```
-Research progress:
-- [ ] Phase 0 · classify research type
-- [ ] Phase 0 · blind exploration (parallel searches)
-- [ ] Phase 0 · separate hard constraints vs. challenged assumptions
-- [ ] Phase 0 · ask (≤3 questions incl. Outcome Alignment), then confirm plan
-- [ ] Phase 1 · select source types from source-catalog
-- [ ] Phase 1 · parallel dimension searches (official + community each)
-- [ ] Phase 1 · per-dimension recommendation + source-quality tags
-- [ ] Phase 1 · adversarial check on every recommendation
-- [ ] Phase 1 · cross-dimension synthesis
-- [ ] Phase 1 · self-review checkpoint (all checks pass)
-- [ ] Phase 1 · write the typed report
-```
+Create these tasks:
+
+1. Phase 0 · classify research type + blind exploration (parallel searches)
+2. Phase 0 · separate hard constraints vs. challenged assumptions
+3. Phase 0 · ask (≤3 questions incl. Outcome Alignment), then confirm plan
+4. Phase 1 · parallel dimension searches (official + community each)
+5. Phase 1 · per-dimension recommendation + source-quality tags
+6. Phase 1 · adversarial check on every recommendation
+7. Phase 1 · cross-dimension synthesis + self-review checkpoint
+8. Phase 1 · write the typed report
 
 ---
 
