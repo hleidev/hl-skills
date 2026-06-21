@@ -2,7 +2,7 @@
   "name": "hl-skills",
   "description": "A personal collection of Claude Code skills, distributed as installable plugins.",
   "owner": {
-    "name": "harry",
+    "name": "Harry",
     "email": "harryleiyyds@gmail.com"
   },
   "plugins": [
