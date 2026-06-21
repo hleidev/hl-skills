@@ -1,6 +1,6 @@
 ---
 name: reporting
-description: Structured external-information research that produces a decision-grade report — technology comparisons, market research, academic topics, and life choices. Runs a two-phase workflow: classify and clarify the question, then run parallel multi-source searches with adversarial verification and source-quality tags, and write a typed report. Use when the user wants researched recommendations backed by sources. NOT for pre-implementation planning — use a planning workflow for that.
+description: "Structured external-information research that produces a decision-grade report — technology comparisons, market research, academic topics, and life choices. Runs a two-phase workflow: classify and clarify the question, then run parallel multi-source searches with adversarial verification and source-quality tags, and write a typed report. Use when the user wants researched recommendations backed by sources. NOT for pre-implementation planning — use a planning workflow for that."
 disable-model-invocation: true
 allowed-tools: WebSearch WebFetch Read Write
 argument-hint: "[topic, question, or vague idea]"
